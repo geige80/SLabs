@@ -75,10 +75,10 @@ contract Wahl {
     isOwner
     {
         status = Status.Ended;
-       if(StimmenTrue<StimmenFalse)
+       if(StimmenTrue>StimmenFalse)
        {
             Endergebnis="Die Wahl endete mit True";
-       }else if (StimmenTrue>StimmenFalse)
+       }else if (StimmenTrue<StimmenFalse)
        {
             Endergebnis="Die Wahl endete mit False";
        }else if(StimmenFalse==StimmenTrue)
